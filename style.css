@@ -703,6 +703,7 @@ section{
 
 
 .logoDark{
+    display: none;
     width: 1.5cm;
     height: 1.5cm;
     align-items: center;
