@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucesso!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #085784;
+            color: #ffffff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .message {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #btnHome {
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #085784;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #btnHome:hover {
+            background-color: #073f5c;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="message">Mensagem enviada com sucesso!</div>
+    <button id="btnHome" onclick="location.href='index.html'">Voltar para a Página Inicial</button>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu portifolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+  <header class="header">
+
+    <img src="Logo-light.png" class="logoLight" id="logoLight" onclick="TrocaTema()()">
+    <img src="Logo-dark.png" class="logoDark" id="logoDark" onclick="TrocaTema()()" style="display: none;">
+
+
+    <nav class="navbar">
+
+      <a href="#home" class="nav-item">Início</a>
+      <a href="#about" class="nav-item">Sobre</a>
+      <a href="#projects" class="nav-item">Projetos</a>
+      <a href="#contact" class="nav-item">Contato</a>
+
+    </nav>
+
+    <div class="menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
+
+  </header>
+
+  <section class="home" id="home">
+
+    <div class="home-content">
+
+      <h1>Olá, me chamo<span> Estevão</span></h1>
+
+      <P> Sou estudante de tecnologia em busca de estágio, estou pronto para transformar<br>  minha paixão pela tecnologia e sede por aprendizado em prática profissional. </P>
+
+
+      <div class="social-icons">
+
+        <a href="https://www.linkedin.com/in/estev%C3%A3o-lima-510152219/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+        <a href="https://wa.me/5581998324226" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+        <a href="https://www.instagram.com/estevaolima16/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+        <a href="https://github.com/estevaoclima05" target="_blank"><i class='bx bxl-github'></i></a>
+
+      </div>
+
+      <a href="#about" class="btn">Conheça-me mais</a>
+
+    </div>
+
+  </section>
+
+
+  <section class="about" id="about">
+
+    <div class="about-content">
+      <h2 class="heading">Sobre mim</h2>
+      
+      <p>Estou no quarto período do curso Análise e Desenvolvimento de Sistemas no Instituto Federal de Pernambuco (IFPE). Já participei de dois projetos de extensão, um deles pude analisar metricamente dados de empresas locais de Paulista - PE , por meio de uma plataforma de análise de dados.</p>
+
+        <p>
+          Ademais, na faculdade pude fazer projetos com vivências de metodologias ágeis como Scrum. Além de utilizar padrões de arquitetura de software como Modelo-Visão-Controlador (MVC).
+        </p>
+
+        <p>Curiosidade: Gosto de trabalhar em equipe e sou apaixonado por aprender idiomas novos.</p>
+      <a href="Currículo-Estevão.pdf" download class="btn2">Currículo</a>
+
+    </div>
+
+    <div class="about-img">
+      <img src="Foto-perfil.png" alt="Foto do Portifolio">
+
+
+    </div>
+
+  </section>
+
+  <section class="projects" id="projects">
+
+    <h1 class="heading">Projetos</h1>
+    <div class="project-details-container">
+      <div class="project-containers">
+        <div class="details-container">
+          <div class="text-container">
+            <h2>Java / PostgreSQL</h2>
+            <img src="Projeto-1.png" alt="Projeto 1" class="project-img" id="fazerDownload" />
+          </div>
+          <h2 class="project-title">Sistema de Gerenciamento<br>de Salão de Beleza</h2>
+          <div class="btn-container">
+
+
+            <button class="project-btn"
+              onclick="window.open('https://github.com/estevaoclima05/Gerenciamento-Salao-de-Beleza', '_blank')">
+              Github
+            </button>
+
+          </div>
+        </div>
+        <div class="details-container">
+          <div class="text-container">
+            <h2>Html / Css / JavaScript</h2>
+            <img src="Projeto-2.png" class="project-img" alt="Projeto 2" class="project-img"
+              onclick="window.open('https://estevaoclima05.github.io/NotAlone-DSWI/', '_blank')" />
+          </div>
+          <h2 class="project-title">Site de Encontros <br>em Viagens</h2>
+          <div class="btn-container">
+            <button class="project-btn"
+              onclick="window.open('https://github.com/estevaoclima05/NotAlone-DSWI', '_blank')">
+              Github
+            </button>
+
+          </div>
+        </div>
+        <div class="details-container">
+          <div class="text-container">
+            <h2>Por enquanto,</h2>
+            <img src="Projeto-3.png" alt="Projeto 3" class="project-img" />
+          </div>
+          <h2 class="project-title">Em andamento<br>...</h2>
+          <div class="btn-container">
+            <button class="project-btn" onclick="window.open('https://github.com/estevaoclima05/', '_blank')">
+              Github
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="heading">Fale comigo
+    </h2>
+
+   
+      <form action="https://api.staticforms.xyz/submit" method="POST">
+
+      <input type="hidden" name="accessKey" value="f460137f-10f4-466c-959e-1b72069f7172">
+      <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/msg.html">
+
+      <div class="input-box">
+        <input type="text" placeholder="Nome completo" name="name" required>
+        <input type="email" placeholder="E-mail" name="email" required>
+
+      </div>
+
+
+      <div class="input-box">
+        <input type="number" placeholder="Celular" name="phone" required>
+        <input type="text" placeholder="Assunto" name="subject">
+
+      </div>
+
+      <textarea name="message" id="" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+
+      
+      <input type="submit" name="_next" value="Enviar" class="btn3">
+    </form>
+
+  </section>
+
+  <footer class="footer">
+
+    <div class="social">
+      <a href="https://www.linkedin.com/in/estev%C3%A3o-lima-510152219/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+        <a href="https://wa.me/5581998324226" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+        <a href="https://www.instagram.com/estevaolima16/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+        <a href="https://github.com/estevaoclima05" target="_blank"><i class='bx bxl-github'></i></a>
+    </div>
+
+
+    <p class="copyright">
+      @ Estevão Lima || Todos direitos reservados
+    </p>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

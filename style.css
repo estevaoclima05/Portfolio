@@ -1,0 +1,798 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radley&family=Space+Mono&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    width: auto;
+    height: auto;
+
+}
+
+:root {
+    --branco-gelo:#f9f9f9;
+    --ciano: rgb(0, 255, 251);
+    --texto-cor:black;
+    --azul-escuro: #085784;
+    --azul-escuro2: #083a57;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+   
+   
+}
+
+body{
+    background: var(--branco-gelo);
+    color: var(--texto-cor)
+}
+
+
+/* Começo */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 3rem 9%;
+    background: var(--branco-gelo);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    height: 2.3cm;
+}
+
+
+
+.logoLight{
+    width: 1.5cm;
+    height: 1.5cm;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+
+.logoLight:hover{
+    transform: scale(1.1);
+}
+
+
+
+.navbar a{
+    font-size: 1.8rem;
+    color: black;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3 ease;
+    border-bottom: 3px solid transparent;
+    
+}
+
+.navbar a:hover{
+    color: var(--azul-escuro);
+    border-bottom:3px solid var(--azul-escuro);
+}
+
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--azul-escuro2);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: var(--azul-escuro);
+}
+
+
+/* Em relação a todas sections*/
+
+section{
+    
+    min-height: 100vh;
+    padding: 10rem 9% 10rem;
+}
+
+/* Section 1 - Introdução/Inicio */
+
+
+.home-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+.home-content h1{
+    margin-top: 2cm;
+    margin-bottom: 0.6cm;
+    font-family: Special Elite, sans-serif;
+    font-size: 7rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+
+.home-content h1 span{
+    font-family: Special Elite, sans-serif;
+    color:var(--azul-escuro)
+    
+}
+
+
+.home-content p{
+    font-family: 'Space Mono', monospace;
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-align: unset;
+    width: auto;
+    margin-bottom: 0.8cm;
+    
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: transparent;
+    border: 0.3rem solid var(--azul-escuro);
+    font-size: 3rem;
+    border-radius: 50%;
+    color: var(--azul-escuro);
+    margin:3rem 1.5rem.3rem 0;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover{
+    color: white;
+    transform: scale(1.3)translateY(-5px);
+    background-color: var(--azul-escuro);
+}
+
+.home .btn {
+    font-family: 'Radley', serif;
+    display: inline-block;
+    margin-top: 1.2cm;
+    padding: 1rem 2.8rem;
+    background: var(--azul-escuro);
+    border-radius: 4rem;
+    font-size: 2rem;
+    color: white;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3 ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    background: var(--branco-gelo);
+    color: var(--azul-escuro);
+    border: 2px solid var(--azul-escuro);
+}
+
+/* Section 2 - Sobre mim */
+
+.about{ 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 10rem;
+    background-color: var(--azul-escuro);
+    color: white;
+}
+
+.heading{
+    font-family: Special Elite, sans-serif;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.about-content h2{
+    text-align: left;
+    line-height: 1.5;
+}
+    
+.about-content p{
+    text-align: justify;
+    margin-right: 3cm;
+    margin-top: 0.5cm;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.6rem;
+    margin: 2rem 0 rem;
+    margin-bottom: 0.5cm;
+}
+.btn2 {
+    
+    font-family: 'Radley', serif;
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 1rem 2.4rem;
+    background: var(--branco-gelo);
+    border-radius: 4rem;
+    font-size: 1.5rem;
+    color: var(--azul-escuro);
+    border: 2px solid transparent;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    transition: 0.3 ease;
+    cursor: pointer;
+}
+
+.btn2:hover{
+    transform: scale(1.05);
+    background: var(--azul-escuro2);
+    color: var(--branco-gelo);
+    border: 2px solid var(--azul-escuro);
+}
+
+.about-img img{
+    position: relative;
+    width: 30vw;
+    border-radius: 50%;
+
+    
+    top: 1rem;
+    cursor:pointer;
+}
+
+
+/* Section 3 - Parte dos projetos */
+
+.projects {
+    position: relative;
+  }
+
+  .project-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+.project-containers {
+    display: flex;
+    gap: 3rem;
+    margin-top: 1.4cm;
+  }
+  
+  
+  .details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: var(--branco-gelo);
+    border-radius: 2rem;
+    border: var(--azul-escuro) 0.1rem solid;
+    border-color: var(--azul-escuro);
+    text-align: center;
+  }
+ 
+  .text-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: space-around;
+    text-align: center;
+    color: var(--azul-escuro);
+    
+  }
+  .text-container h2 {
+    font-family: 'Space Mono', monospace;
+  }
+  
+  .project-img {
+    cursor: pointer;
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+  }
+  
+  .project-img:hover{
+    transform: scale(1.05);
+  }
+
+  
+  .project-title {
+    font-family: 'Space Mono', monospace;
+    margin-top: 2rem;
+    
+    color: var(--azul-escuro);
+  }
+  
+  .project-btn {
+    font-family: 'Radley', serif;
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 1rem 2.4rem;
+    background: var(--branco-gelo);
+    border-radius: 4rem;
+    font-size: 2rem;
+    color: var(--azul-escuro);
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3 ease;
+    cursor: pointer;
+    color: var(--branco-gelo);
+    border-color:var(--azul-escuro);
+    background-color: var(--azul-escuro);
+  }
+
+
+
+
+
+
+/* Section 4 - Forms para contato */
+.contact{
+    background-color: var(--azul-escuro);
+}
+
+.contact h2{
+    margin-bottom: 3rem;
+    color: rgb(255, 255, 255);
+}
+
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-emphasis: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--texto-cor);
+    background-color: var(--branco-gelo);
+    border-radius: 0.8rem;
+    border: 2px solid var(--azul-escuro);
+    margin:1rem 0;
+    resize: none;
+}
+
+.btn3 {
+    margin-left: 7.7cm;
+    
+    font-family: 'Radley', serif;
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    background: var(--branco-gelo);;
+    border-radius: 1rem;
+    font-size: 2rem;
+    color: var(--azul-escuro);
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3 ease;
+    cursor: pointer;
+}
+
+.btn3:hover{
+    transform: scale(1.05);
+    background: var(--branco-gelo);
+    color: var(--azul-escuro);
+    border: 2px solid var(--azul-escuro);
+}
+
+
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--azul-escuro);
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--branco-gelo);
+}
+
+.footer .social a{
+    font-size: 25px;
+    color: white;
+    border: 2px solid white;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3 ease;
+}
+
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
+    background-color: white;
+    color: var(--azul-escuro);
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.footer ul li a:hover{
+    border-bottom: 3px solid white;
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .copyright{
+    margin-top:5px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+
+.projects-info img{
+    width: 10Scm;
+    height: 5cm;
+}
+
+
+/* Seção 1 - Introdução/Inicio */
+@media screen and (max-width: 768px) {
+    
+    .menu {
+        display: block;
+    }
+
+    .menu.ativo .bar:nth-child(1){
+        transform:  translateY(8px) rotate(45deg);
+    }
+    .menu.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar {
+        padding: 18px 20px;
+    }
+
+    .navbar a {
+        margin-right: 1cm;
+    }
+  
+
+ 
+    .navbar {
+        position: fixed;
+        right: -150%;
+        top: 85px;
+        width: 100%;
+        height: 360%;
+        display: flex;
+        text-align: center;
+        
+        flex-direction: column;
+        
+        background: var(--branco-gelo) ;
+        gap: -10px;
+        transition: 0.3s;
+        
+    }
+    .navbar.ativo{
+        right: 0;
+        
+    }
+    .nav-item{
+        margin: 20px 0;
+    }
+    section {
+        padding: 6rem 9%;
+    }
+
+    .home-content h1 {
+        font-size: 4.5rem;
+    }
+
+    .home-img img {
+        width: 40vw;
+    }
+
+    .social-icons a {
+        width: 4rem;
+        height: 4rem;
+        font-size: 2.5rem;
+        margin: 2rem 1.5rem 0.3rem 0;
+    }
+
+    .btn {
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+        font-size: 1.8rem;
+    }
+}
+
+/* Seção 2 - Sobre mim */
+@media screen and (max-width: 1024px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .about-img img {
+        width: 80vw;
+    }
+
+    .about-content p {
+        margin-right: 0;
+    }
+
+    .btn2 {
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+        font-size: 1.8rem;
+    }
+}
+
+/* Seção 3 - Parte dos projetos */
+@media screen and (max-width: 768px) {
+    .project-containers {
+        flex-direction: column;
+    }
+
+    .details-container {
+        padding: 1rem;
+    }
+
+    .article-container {
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .project-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-title {
+        margin-top: 1rem;
+    }
+
+    .project-btn {
+        margin-top: 1rem;
+        padding: 0.8rem 2rem;
+        font-size: 1.6rem;
+    }
+}
+
+/* Seção 4 - Forms para contato */
+@media screen and (max-width: 768px) {
+    .contact form {
+        max-width: 100%;
+    }
+
+    .contact form .input-box input,
+    .contact form textarea {
+        width: 100%;
+    }
+
+    .btn3 {
+        margin-left: 0;
+        margin-top: 2rem;
+        font-size: 1.8rem;
+    }
+}
+
+/* Rodapé (Footer) */
+@media screen and (max-width: 768px) {
+    .footer .social a {
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+        margin: 0 8px;
+    }
+
+    .footer ul {
+        font-size: 16px;
+    }
+
+    .footer ul li {
+        padding: 0 10px;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+}
+
+
+/* Adicione essas classes no seu CSS */
+.dark-mode  {
+
+    .header {
+        background-color: var(--azul-escuro);
+        box-shadow: 0 0.1rem 0.5rem var(--azul-escuro2);
+    }
+
+    .navbar a{
+        color: var(--branco-gelo);
+    }
+
+    .navbar a:hover,
+    .navbar a.active{
+    color: var(--ciano); 
+}
+
+.menu .bar{
+   
+    background: var(--branco-gelo);
+    
+}
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: var(--branco-gelo);
+
+}
+
+@media (max-width: 768px) { 
+    .navbar {
+    
+    
+    
+        color: #ffffff;
+        background: var(--azul-escuro2) ;
+        
+        
+    }
+    
+}
+    
+
+
+.logoDark{
+    width: 1.5cm;
+    height: 1.5cm;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3 ease;
+    
+}
+
+.logoDark:hover{
+    transform: scale(1.1);
+}
+
+.social-icons a{
+    
+    background: transparent;
+    border: 0.3rem solid var(--branco-gelo);
+    
+    color: var(--branco-gelo);
+   
+}
+
+
+.home{
+    background-color: var(--azul-escuro);
+    color: var(--branco-gelo);
+}
+
+.home h1 span{
+    color: rgb(0, 255, 251);
+}
+
+.light-mode {
+    --branco-gelo: #f9f9f9;
+    --ciano: #d2ffd1;
+    --texto-cor: black;
+    --azul-escuro: #085784;
+    --azul-escuro2: #083a57;
+}
+
+.home .btn {
+    margin-top: 1.2cm;
+    color: var(--azul-escuro);
+    border: 2px solid transparent;
+    background-color: rgb(0, 255, 251) ;
+    transition: 0.3 ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    
+}
+
+.projects{
+    background-color: var(--azul-escuro);
+}
+
+.heading {
+    color: var(--branco-gelo);
+}
+
+
+ .details-container {
+    border-color: var(--branco-gelo);
+    background:var(--azul-escuro2);
+  }
+
+  .project-title {
+    font-family: 'Space Mono', monospace;
+    margin-top: 2rem;
+    
+    color: var(--branco-gelo);
+  }
+
+  .text-container {
+    font-family: 'Space Mono', monospace;
+    color: var(--branco-gelo);
+    text-align: center
+
+  }
+
+  .details-container {
+    border-color: var(--azul-escuro2);
+  }
+
+  .project-btn {
+    color: var(--azul-escuro);
+    border: none;
+    background-color: var(--branco-gelo);
+  }
+
+}
