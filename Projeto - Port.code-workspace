@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Projeto - Port",
+			"path": "../../OneDrive/Área de Trabalho/Projeto - Port"
+		},
+		{
+			"name": "Portfolio",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Portfolio"
+	}
+}

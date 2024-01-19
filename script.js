@@ -21,12 +21,12 @@ function TrocaTema() {
     body.classList.toggle('light-mode');
 
     if (body.classList.contains('dark-mode')) {
-        logoLight.remove;
-        logoDark.add;
+        logoLight.style.display = 'none'
+        logoDark.style.display = 'block'
         
     } else {
-        logoDark.remove;
-        logoLight.add;
+        logoDark.style.display = 'none'
+        logoLight.style.display = 'block'
         
     }
 
@@ -43,11 +43,11 @@ document.addEventListener('Carregou', () => {
     if (salvarTema) {
         document.body.classList.add(salvarTema === 'dark' ? 'dark-mode' : 'light-mode');
         if (salvarTema === 'dark') {
-            logoLight.remove;
-            logoDark.add;
+            logoLight.style.display = 'none'
+        logoDark.style.display = 'block'
         } else {
-            logoDark.remove;
-            logoLight.add;
+            logoDark.style.display = 'none'
+           logoLight.style.display = 'block'
         }
     }
 });
