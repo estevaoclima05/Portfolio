@@ -666,6 +666,21 @@ section{
         box-shadow: 0 0.1rem 0.5rem var(--azul-escuro2);
     }
 
+    .logoDark{
+        display: none;
+        width: 1.5cm;
+        height: 1.5cm;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3 ease;
+        
+    }
+    
+    .logoDark:hover{
+        transform: scale(1.1);
+    }
+
     .navbar a{
         color: var(--branco-gelo);
     }
@@ -700,21 +715,6 @@ section{
 }
     
 
-
-.logoDark{
-    display: none;
-    width: 1.5cm;
-    height: 1.5cm;
-    align-items: center;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.3 ease;
-    
-}
-
-.logoDark:hover{
-    transform: scale(1.1);
-}
 
 .social-icons a{
     
